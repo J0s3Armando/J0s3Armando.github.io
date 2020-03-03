@@ -9,10 +9,10 @@ body{
             a{
                 color: rgb(65, 64, 64);
                 display: inline-block;
-                padding: 10px 15px;
+                padding: 5px 10px;
                 text-decoration: none;
                 border: solid 1px #f7f9f9;
-                border-radius: 5px;
+              
                 i{
                     margin: 3px;
                     color: #a1887f;
@@ -21,7 +21,7 @@ body{
                     text-decoration: none;
                    
                     color: #a1887f;
-                    border: solid 1px #af9c96;
+                    border-bottom: solid 1px #af9c96;
                 }
                 &:hover i{
                     text-decoration: none;

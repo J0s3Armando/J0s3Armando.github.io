@@ -7,17 +7,16 @@ body header {
   body header nav a {
     color: #414040;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 10px;
     text-decoration: none;
-    border: solid 1px #f7f9f9;
-    border-radius: 5px; }
+    border: solid 1px #f7f9f9; }
     body header nav a i {
       margin: 3px;
       color: #a1887f; }
     body header nav a:hover {
       text-decoration: none;
       color: #a1887f;
-      border: solid 1px #af9c96; }
+      border-bottom: solid 1px #af9c96; }
     body header nav a:hover i {
       text-decoration: none;
       color: #a1887f; }
