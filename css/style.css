@@ -1,28 +1,11 @@
-body header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px;
-  background: #f7f9f9; }
-  body header nav a {
-    color: #414040;
-    display: inline-block;
-    padding: 5px 10px;
-    text-decoration: none;
-    border: solid 1px #f7f9f9; }
-    body header nav a i {
-      margin: 3px;
-      color: #a1887f; }
-    body header nav a:hover {
-      text-decoration: none;
-      color: #a1887f;
-      border-bottom: solid 1px #af9c96; }
-    body header nav a:hover i {
-      text-decoration: none;
-      color: #a1887f; }
+body header .navbar .navbar-brand {
+  color: #4e2727; }
+body header .navbar .logo {
+  width: 50px; }
 
 body {
   box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

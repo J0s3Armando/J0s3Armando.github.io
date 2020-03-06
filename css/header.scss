@@ -1,33 +1,12 @@
 body{
     header{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 15px;
-        background:   #f7f9f9;
-        nav{
-            a{
-                color: rgb(65, 64, 64);
-                display: inline-block;
-                padding: 5px 10px;
-                text-decoration: none;
-                border: solid 1px #f7f9f9;
-              
-                i{
-                    margin: 3px;
-                    color: #a1887f;
-                }
-                &:hover{
-                    text-decoration: none;
-                   
-                    color: #a1887f;
-                    border-bottom: solid 1px #af9c96;
-                }
-                &:hover i{
-                    text-decoration: none;
-                    color: #a1887f;
-                }
+        .navbar{
+            .navbar-brand{
+                color: #4e2727;         
             }
+            .logo{
+                width: 50px;
+            }    
         }
     }
 }
