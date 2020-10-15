@@ -1,11 +1,126 @@
-body header .navbar .navbar-brand {
-  color: #4e2727; }
-body header .navbar .logo {
-  width: 50px; }
+/*fonts and text*/
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #eeeeee;
+}
+
+/*images*/
+img {
+  width: 100%;
+}
+
+/*containers*/
+.container {
+  max-width: 80em;
+  width: 85%;
+  margin: 0px auto;
+}
+
+/*margins*/
+.my-0 {
+  margin: 0rem 0rem;
+}
+
+.my-4 {
+  margin: 4rem 0rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+/*display*/
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/*buttons*/
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+header {
+  background-image: linear-gradient(90deg, rgba(252, 70, 106, 0.199) 0%, rgba(63, 94, 251, 0.199) 100%), url("/img/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  height: 35rem;
+}
+
+header nav {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+
+header .presentation {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/*cards*/
+.card {
+  width: 15em;
+  background: #eeeeee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 10px 15px;
+}
+
+.card-image {
+  height: 8em;
+  overflow: hidden;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: 4px 0px;
+}
+
+.card-subtitle {
+  font-weight: 300;
+  text-align: justify;
+}
 
 body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  height: 100vh; }
+  -webkit-box-sizing: border-box;
+  height: 100vh;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */

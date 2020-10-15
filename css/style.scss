@@ -1,8 +1,12 @@
-@import 'header.scss';
 @import 'general.scss';
+@import 'header.scss';
+@import 'main.scss';
 
 body{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     height: 100vh;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    background: #fff;
 }

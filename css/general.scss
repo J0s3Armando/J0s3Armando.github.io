@@ -1,0 +1,81 @@
+/*fonts and text*/
+.title
+{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.sub-title
+{
+    font-size: 2rem;
+}
+
+.text
+{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-white
+{
+    color: #eeeeee;
+}
+
+/*images*/
+
+img
+{
+    width: 100%;
+}
+
+/*containers*/
+
+.container
+{
+    max-width: 80em;
+    width: 85%;
+    margin: 0px auto;
+}
+
+/*margins*/
+.my-0
+{
+    margin: 0rem 0rem;
+}
+.my-4
+{
+    margin: 4rem 0rem;
+}
+
+.mb-0
+{
+    margin-bottom: 0px;
+}
+
+/*display*/
+
+.d-flex
+{
+    display: flex;
+}
+
+.justify-content-center
+{
+    justify-content: center;
+}
+
+
+/*buttons*/
+.btn
+{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 300;
+}
+

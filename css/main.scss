@@ -1,0 +1,31 @@
+/*cards*/
+.card
+{
+    width: 15em;
+    background: #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body
+{
+    padding: 10px 15px;
+}
+.card-image
+{
+    height: 8em;
+    overflow: hidden;
+}
+
+.card-title
+{
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 4px 0px;
+}
+
+.card-subtitle
+{
+    font-weight: 300;
+    text-align: justify;
+}
