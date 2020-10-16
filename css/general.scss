@@ -12,8 +12,8 @@
 
 .text
 {
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 27px;
 }
 
 .text-center
@@ -37,8 +37,8 @@ img
 
 .container
 {
-    max-width: 80em;
-    width: 85%;
+    max-width: 70em;
+    width: 90%;
     margin: 0px auto;
 }
 
@@ -57,6 +57,11 @@ img
     margin-bottom: 0px;
 }
 
+.m-1
+{
+    margin: 1em;
+}
+
 /*display*/
 
 .d-flex
@@ -69,13 +74,55 @@ img
     justify-content: center;
 }
 
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
+
+.flex-grow-1
+{
+    flex-grow: 1;
+}
 
 /*buttons*/
 .btn
 {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 15px;
     text-decoration: none;
     font-weight: 300;
 }
 
+.btn-red
+{
+    background: none;
+    border: solid 1px  #f72d55;
+    transition: background .3s ease;
+    color: #f72d55;
+}
+
+.btn-red:hover
+{
+    background: #f72d55;
+    color: #eeeeee;
+}
+
+
+.btn-rounded
+{
+    border-radius: 15px;
+}
+
+/*listas*/
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li
+{
+    display: block;
+    margin: 15px 0px;
+}

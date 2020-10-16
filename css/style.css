@@ -9,8 +9,8 @@
 }
 
 .text {
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 27px;
 }
 
 .text-center {
@@ -28,8 +28,8 @@ img {
 
 /*containers*/
 .container {
-  max-width: 80em;
-  width: 85%;
+  max-width: 70em;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -46,6 +46,10 @@ img {
   margin-bottom: 0px;
 }
 
+.m-1 {
+  margin: 1em;
+}
+
 /*display*/
 .d-flex {
   display: flex;
@@ -55,22 +59,59 @@ img {
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
 /*buttons*/
 .btn {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 15px;
   text-decoration: none;
   font-weight: 300;
+}
+
+.btn-red {
+  background: none;
+  border: solid 1px #f72d55;
+  transition: background 0.3s ease;
+  color: #f72d55;
+}
+
+.btn-red:hover {
+  background: #f72d55;
+  color: #eeeeee;
+}
+
+.btn-rounded {
+  border-radius: 15px;
+}
+
+/*listas*/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: block;
+  margin: 15px 0px;
 }
 
 header {
   background-image: linear-gradient(90deg, rgba(252, 70, 106, 0.199) 0%, rgba(63, 94, 251, 0.199) 100%), url("/img/home.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
   position: relative;
   height: 35rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 88%, 0% 100%);
 }
 
 header nav {
@@ -89,9 +130,15 @@ header .presentation {
 /*cards*/
 .card {
   width: 15em;
-  background: #eeeeee;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -114,6 +161,59 @@ header .presentation {
   text-align: justify;
 }
 
+/*Lists*/
+.tecnologies > :nth-child(1) {
+  border-right: 2px solid #f72d55;
+}
+
+.tecnologies > :nth-child(2) {
+  border-left: 2px solid #f72d55;
+}
+
+@media screen and (max-width: 604px) {
+  .card {
+    width: 13em;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 530px) {
+  header {
+    height: 30em;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 16em;
+  }
+
+  .card-image {
+    height: 10em;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 380px) {
+  .tecnologies {
+    flex-wrap: wrap;
+  }
+
+  .tecnologies > :nth-child(1) {
+    border-bottom: 2px solid #f72d55;
+    border-right: none;
+    width: 100%;
+  }
+
+  .tecnologies > :nth-child(2) {
+    border-top: 2px solid #f72d55;
+    border-left: none;
+    width: 100%;
+  }
+}
 body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

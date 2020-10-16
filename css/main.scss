@@ -2,9 +2,16 @@
 .card
 {
     width: 15em;
-    background: #eeeeee;
+    background: #fff;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,.2);
+    transition: box-shadow .3s ease;
+}
+
+.card:hover
+{
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,.2);
 }
 
 .card-body
@@ -28,4 +35,16 @@
 {
     font-weight: 300;
     text-align: justify;
+}
+
+
+/*Lists*/
+.tecnologies>:nth-child(1)
+{
+    border-right: 2px solid #f72d55;
+}
+
+.tecnologies>:nth-child(2)
+{
+    border-left: 2px solid #f72d55;
 }

@@ -1,0 +1,58 @@
+@media screen and (max-width: 604px)
+{
+    .card
+    {
+        width: 13em;
+    }
+
+    .title
+    {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and(max-width:530px)
+{
+    header
+    {
+        height: 30em;
+    }
+    .title
+    {
+        font-size: 2em;
+    }
+    .card
+    {
+        width: 16em;
+    }
+
+    .card-image
+    {
+        height: 10em;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and(max-width:380px)
+{
+    .tecnologies
+    {
+        flex-wrap: wrap;
+    }
+    .tecnologies>:nth-child(1)
+    {
+        
+        border-bottom: 2px solid #f72d55;
+        border-right: none;
+        width: 100%;
+    }
+
+    .tecnologies>:nth-child(2)
+    {
+        border-top: 2px solid #f72d55;
+        border-left: none;
+        width: 100%;
+    }
+
+}
