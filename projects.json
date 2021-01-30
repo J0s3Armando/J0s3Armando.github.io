@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Concepto de una página web",
+        "description":"Maquetado de un página usando html y css.",
+        "image": "concept1.png",
+        "url": "/concept1"
+    },
+    {
+        "title": "Agrosoft & Tec",
+        "description":"La página web de una empresa ficticia, creada por mi equipo escolar.",
+        "image": "agrosoftec.png",
+        "url": "/agrosoftec"
+    },
+    {
+        "title": "Página web con Ajax",
+        "description":"Una práctica usando ajax para obtener datos de un servidor sin recargar toda la página.",
+        "image": "ajax.png",
+        "url": "/ajax/"
+    },
+    {
+        "title": "App usando firebase",
+        "description":"Aplicación web para recordatorios o tareas pendientes.",
+        "image": "recordatorios.png",
+        "url": "/firebaseProject"
+    }
+]
