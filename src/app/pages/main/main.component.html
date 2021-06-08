@@ -1,0 +1,19 @@
+
+<section *ngIf="!pageService.isLoading" class="container-home">
+    <section>
+        <h1>{{pageService.pageInfo.degree}}</h1>
+        <h2>{{pageService.pageInfo.name}}</h2>
+        <p>
+            <a href="{{ pageService.pageInfo.githubUrl}}"> {{pageService.pageInfo.githubProfile}} </a>
+        </p>
+        <p>
+            <a href="mailTo:{{ pageService.pageInfo.email }}">{{ pageService.pageInfo.email }}</a>
+        </p>
+        <a routerLink="/projects" class="btn btn-green">
+            Go to projects
+        </a>
+    </section>
+    <section class="img-container">
+        <img src="assets/img/main/main.svg" alt="developer">
+    </section>
+</section>

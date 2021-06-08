@@ -1,14 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './share/header/header.component';
+import { MainComponent } from './pages/main/main.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { AboutComponent } from './pages/about/about.component';
+import { AppRouterModule } from './modules/appRouting.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    PortafolioComponent,
+    ProjectComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
