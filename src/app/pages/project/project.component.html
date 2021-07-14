@@ -1,1 +1,5 @@
-<p>project works!</p>
+<section *ngIf="!projectService.isLoading" class="flex" >
+    <div  *ngFor="let project of projectService.projects ">
+        <app-card *ngIf="project" [project]="project" ></app-card>
+    </div>
+</section>

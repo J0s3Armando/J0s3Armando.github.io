@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PageinfoService } from './services/pageinfo.service';
+import { ProjectService } from './services/project.service';
 
 @Component({
   selector: 'app-root',
