@@ -4,7 +4,6 @@
     padding: 0em 1em;
     height: 100%;
     margin-bottom: 4em;
-    align-items: center;
     position: relative;
 }
 
@@ -18,66 +17,20 @@
     width: 100%;
 }
 
-h1
-{
-    letter-spacing: 0.3em;
-    line-height: 1.5em;
-    font-size: 2.5em;
-    margin-bottom: 0;
-}
-
-h2
-{
-    letter-spacing: 0.1em;
-}
-
-h2,p
-{
-    line-height: 0.7em;
-}
-
 .btn-green
 {
     margin-top: 1em;
 }
 
-p>a
-{
-    color: #3a3a3a;
-}
-
-@media screen and (max-width: 870px) 
-{
-    h1
-    {
-        letter-spacing: 0.2em;
-        line-height: 1.3em;
-        font-size: 2.3em;
-    }
-    h2{
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 870px) 
-{
-    h1
-    {
-        letter-spacing: 0.2em;
-        line-height: 1.3em;
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1em;
-    }
-}
-
 @media screen and (max-width: 580px) 
 {
+    .container-home > section
+    {
+        width: 100%;
+    }
     .img-container
     {
         position: absolute;
-        width: 100% !important;
         opacity: 0.1;
     }
 }

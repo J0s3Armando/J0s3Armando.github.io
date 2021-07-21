@@ -1,0 +1,67 @@
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
+
+.flex-col
+{
+    flex-direction: column;
+}
+
+.flex-center
+{
+    justify-content: center;
+}
+
+section
+{
+    width: 50%;
+    padding: 0px 1em;
+    margin: 0em 1em;
+}
+
+.img-container a
+{
+    display: block;
+    overflow: hidden;
+}
+
+img
+{
+    width: 100%;
+    transition: transform 0.9s ease-out;
+}
+
+img:hover
+{
+    transform: scale(1.03);
+}
+
+.tec
+{
+    margin-top: 2em;
+    padding: 0 1em;
+}
+
+
+
+@media screen and (max-width:900px) 
+{
+    section
+    {
+        width: 100%;
+    }
+    .flex
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:434px) 
+{
+    section
+    {
+       padding: 0;
+       margin: 0;
+    }
+}

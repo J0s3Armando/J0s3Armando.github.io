@@ -1,0 +1,22 @@
+span
+{
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    animation: 2s infinite linear spin;
+    border: solid 0.5em rgba(255, 255, 255, 0.2);
+    border-top: solid 0.5em #00bfa6 ;
+    border-radius: 50%;
+    background: none;
+}
+
+@keyframes spin 
+{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

@@ -1,9 +1,9 @@
-<a href="{{ project.url }}" target="_blanck" class="card">
+<a [routerLink]="['/portafolio', project.id]" class="card">
     <div class="img-container">
         <img src="{{ project.img }}" alt=" {{ project.title }} ">
     </div>
     <section class="card-body">
-        <h4 class="title" >{{ project.title}}</h4>
-        <p class="subtitle" >{{ project.short_description }}</p>
+        <h4>{{ project.title}}</h4>
+        <p>{{ project.short_description }}.</p>
     </section>
 </a>

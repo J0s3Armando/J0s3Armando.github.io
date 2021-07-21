@@ -23,9 +23,14 @@ html
     height: 100%;
 }
 
+ul
+{
+    padding: 0;
+}
 ul li
 {
     list-style: none;
+    line-height: 1.5em;
 }
 
 a
@@ -33,22 +38,123 @@ a
     text-decoration: none;
 }
 
+.text-black
+{
+    color: #3a3a3a;
+}
+
+.text
+{
+    line-height: 25px;
+}
+
+.title
+{
+    letter-spacing: 0.3em;
+    font-size: 2.4em;
+    margin: 0 0 0.3em 0;
+}
+
+.sub-title
+{
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    margin: 0;
+}
+
 .btn
 {
-    display: inline-block;
-    padding: 0.5em 0.8em;
+    display      : inline-block;
+    padding      : 0.5em 0.8em;
+    margin       : 1em 0.5em;
+    border-radius: 0.5em;
+}
+
+.btn:hover
+{
+    font-weight: bold;
 }
 
 .btn-green
 {
-    background   : #00bfa6;
-    border-radius: 0.5em;
     color        : #fdfdfd;
+    background   : #00bfa6;
     transition   : box-shadow 0.3s ease;
+}
+
+.btn-black
+{
+    background:#514e64;
+    transition   : box-shadow 0.3s ease;
+    color: #fdfdfd;
+}
+
+.btn-black:hover
+{
+   box-shadow : 0 0 0.5em 0.2em #736f8f;
 }
 
 .btn-green:hover
 {
     box-shadow : 0 0 0.5em 0.2em #01d4b8;
-    font-weight: bold;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex-vertical-center
+{
+    align-items: center;
+}
+
+.tecnologies
+{
+    display      : inline-block;
+    padding      : 0.4em 0.6em;
+    border-radius: 0.4em;
+    margin       : 0.3em 0.4em;
+    box-shadow   : -0.3em 0.5em 1em  rgba(28, 163, 134, 0.3);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tecnologies:hover
+{
+    box-shadow   : -0.3em 0.5em 1em  rgba(28, 163, 134, 0.6);
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 870px) 
+{
+    .title
+    {
+        letter-spacing: 0.2em;
+        line-height: 1.3em;
+        font-size: 2.3em;
+    }
+    .sub-title{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 870px) 
+{
+    .title
+    {
+        letter-spacing: 0.2em;
+        line-height: 1.3em;
+        font-size: 2em;
+    }
+    .sub-title{
+        font-size: 1em;
+    }
 }

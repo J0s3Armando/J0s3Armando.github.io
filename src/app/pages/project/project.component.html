@@ -3,3 +3,4 @@
         <app-card *ngIf="project" [project]="project" ></app-card>
     </div>
 </section>
+<app-loading *ngIf="projectService.isLoading"></app-loading>

@@ -1,1 +1,45 @@
-<p>about works!</p>
+<section *ngIf="!pageInfoService.isLoading" class="about" >
+    <article class="flex flex-vertical-center">
+        <div class="img-container container">
+            <img src="assets/img/main/work.svg" alt="programador">
+        </div>
+        <div class="container">
+            <h2 class="title">{{ pageInfoService.pageInfo.name | uppercase }}</h2>
+            <h4 class="sub-title">{{ pageInfoService.pageInfo.degree | uppercase }}</h4>
+            <p class="text text-black"> <i class="fas fa-address-card"></i> {{ pageInfoService.pageInfo.objective }}.</p>
+            <p>
+                <a class="btn btn-black" target="_blank" href="{{ pageInfoService.pageInfo.githubUrl }}"> <fa-icon [icon]="githubIcon" ></fa-icon> GitHub</a>
+                <a class="btn btn-green" href="mailTo:{{ pageInfoService.pageInfo.email }}"> <fa-icon [icon]="mailIcon"></fa-icon> Contact me</a>
+            </p>
+        </div>
+    </article>
+    <section>
+        <h3 class="text-center skills-title">SKILLS</h3>
+        <section class="flex">
+            <div class="container">
+                <h4 class="text-center">Dev tools</h4>
+                <div>
+                    <span  *ngFor="let tool of pageInfoService.pageInfo.tecnologies">
+                        <span class="tecnologies" *ngIf="tool" >{{tool}}</span>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <h4>Communication</h4>
+                <div>
+                    <span *ngFor="let skill of pageInfoService.pageInfo.communications">
+                        <span class="tecnologies" *ngIf="skill">{{ skill }}</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="text-center">
+        <p>Know more about me :)</p>
+        <p>
+            <a class="btn btn-green" target="_blank" href="{{pageInfoService.pageInfo.curriculum}}"> <fa-icon [icon]="downloadIcon"></fa-icon> Download curriculum</a>
+        </p>
+    </section>
+</section>
+
+<app-loading *ngIf="pageInfoService.isLoading" ></app-loading>

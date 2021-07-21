@@ -20,5 +20,10 @@ export class ProjectService
       this.isLoading = false;
     });
   }
+
+  getProjectById(id:number)
+  {
+    return this.http.get(`https://portafolio-85133-default-rtdb.firebaseio.com/projects/${id}.json`);
+  }
   
 }

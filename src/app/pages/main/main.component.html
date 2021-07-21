@@ -1,19 +1,21 @@
 
-<section *ngIf="!pageService.isLoading" class="container-home">
-    <section>
-        <h1>{{pageService.pageInfo.degree}}</h1>
-        <h2>{{pageService.pageInfo.name}}</h2>
+<section *ngIf="!pageService.isLoading" class="container-home flex-vertical-center">
+    <section class="info-container">
+        <h1 class="title">{{pageService.pageInfo.name | uppercase}}</h1>
+        <h2 class="sub-title">{{pageService.pageInfo.degree | uppercase}}</h2>
         <p>
-            <a href="{{ pageService.pageInfo.githubUrl}}"> {{pageService.pageInfo.githubProfile}} </a>
+            <a class="text-black" href="{{ pageService.pageInfo.githubUrl}}"> <fa-icon [icon]="githubIcon"></fa-icon> {{pageService.pageInfo.githubProfile}} </a>
         </p>
         <p>
-            <a href="mailTo:{{ pageService.pageInfo.email }}">{{ pageService.pageInfo.email }}</a>
+            <a class="text-black" href="mailTo:{{ pageService.pageInfo.email }}"> <fa-icon [icon]="mailIcon"></fa-icon> {{ pageService.pageInfo.email }}</a>
         </p>
         <a routerLink="/projects" class="btn btn-green">
-            Go to projects
+           Go to projects <fa-icon [icon]="projectIcon" ></fa-icon>
         </a>
     </section>
     <section class="img-container">
         <img src="assets/img/main/main.svg" alt="developer">
     </section>
 </section>
+
+<app-loading *ngIf="pageService.isLoading" ></app-loading>

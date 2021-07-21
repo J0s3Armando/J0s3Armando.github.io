@@ -9,7 +9,7 @@ import { ProjectService } from './services/project.service';
 })
 export class AppComponent 
 {
-  constructor() 
+  constructor(private pageInfoService: PageinfoService, private projectsService: ProjectService) 
   {
     
   }

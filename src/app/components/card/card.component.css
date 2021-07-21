@@ -1,16 +1,16 @@
 .card
 {
-    display: block;
+    display        : block;
     text-decoration: none;
-    color: #3a3a3a;
-    width: 15em;
-    height: 18.5em;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 0.5em;
-    overflow: hidden;
-    box-shadow: -0.3em 0.5em 1em  rgba(28, 163, 134, 0.3);
-    transition: all 0.9s ease;
-    margin: 1em;
+    color          : #3a3a3a;
+    width          : 15em;
+    height         : 18.5em;
+    background     : rgba(255, 255, 255, 0.3);
+    border-radius  : 0.5em;
+    overflow       : hidden;
+    box-shadow     : -0.3em 0.5em 1em  rgba(28, 163, 134, 0.3);
+    transition     : all 0.9s ease;
+    margin         : 1em;
 }
 
 .card:hover img
